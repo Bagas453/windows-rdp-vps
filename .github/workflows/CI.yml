@@ -1,4 +1,4 @@
-name: Windows-RDP
+lname: Windows-RDP
 
 on: workflow_dispatch
 
@@ -19,7 +19,7 @@ jobs:
     - name: Download Launcher.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Bagas453/windows-rdp-vps/main/launcher/Node.js.lnk -OutFile Node.js.lnk"
-        Invoke-WebRequest https://raw.githubusercontent.com/Bagas453/windows-rdp-vps/main/launcher/Visual Studio 2019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/Bagas453/windows-rdp-vps/main/launcher/Visual Studio 2019.lnk -OutFile Visual Studio 2019.lnk
         Invoke-WebRequest https://raw.githubusercontent.com/Bagas453/windows-rdp-vps/main/launcher/Ganti Password.exe -OutFile Ganti Password.exe
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
